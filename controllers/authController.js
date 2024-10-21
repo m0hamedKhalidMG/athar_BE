@@ -1,9 +1,7 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-const mongoose = require("mongoose");
-const Admin = mongoose.model("Admin");
-const Preferences = require('../models/Preferences'); // Import the Preferences model
+const Admin = require('../models/User'); // Import the Preferences model
 
 
 
