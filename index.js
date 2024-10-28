@@ -4,7 +4,6 @@ const MongoStore = require("connect-mongo");
 const path = require("path");
 const bodyParser = require("body-parser");
 const http = require("http");
-const apiRouter = require("./routes/api");
 const authApiRouter = require("./routes/auth");
 const errorHandlers = require("./handlers/errorHandlers");
 const { isValidToken } = require("./controllers/authController");
@@ -116,7 +115,6 @@ app.post('/api/reports', upload.single('image'), async (req, res) => {
 
 // API routes
 app.use("/api/v1", authApiRouter);
-app.use("/api", apiRouter);
 
 // Handle 404 errors
 app.use(errorHandlers.notFound);

@@ -1,4 +1,8 @@
 const mongoose = require("mongoose");
+require('./models/User.js'); 
+require('./models/report.js'); 
+
+
 
 require("dotenv").config({ path: ".env" });
 
