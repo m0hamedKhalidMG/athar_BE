@@ -5,6 +5,10 @@ require('./models/report.js');
 
 
 require("dotenv").config({ path: ".env" });
+require('./models/Book.js'); 
+require('./models/Preferences.js'); 
+require('./models/User.js'); 
+require('./models/report.js'); 
 
 // Connect to our Database and handle any bad connections
 // mongoose.connect(process.env.DATABASE);
