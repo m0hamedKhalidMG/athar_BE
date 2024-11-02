@@ -5,8 +5,7 @@ require('./models/report.js');
 
 
 require("dotenv").config({ path: ".env" });
-require('./models/Book.js'); 
-require('./models/Preferences.js'); 
+
 require('./models/User.js'); 
 require('./models/report.js'); 
 
